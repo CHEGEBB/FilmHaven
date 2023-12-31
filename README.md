@@ -31,11 +31,11 @@ git clone https://github.com/CHEGEBB/FilmHaven.git
 Open the index.html file in your browser to start exploring FilmHaven.
 
 ## 🛠️ Tech Stack
-HTML
-CSS
-JavaScript
-jQuery
-Font Awesome
+HTML<br>
+CSS<br>
+JavaScript<br>
+jQuery<br>
+Font Awesome<br>
 # coming soon
 python backend
 ## 🌟 Author
@@ -46,7 +46,7 @@ Feel free to contribute and make FilmHaven even more awesome! 🎉
 📝 License
 This project is licensed under the MIT License.
 
-Enjoy your movie journey with FilmHaven! 🎉🍿
+kindly check the project out .Enjoy your movie journey with FilmHaven! 🎉🍿
 
 
 
