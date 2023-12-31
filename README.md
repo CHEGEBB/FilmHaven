@@ -1,3 +1,13 @@
+## FilmHaven
+![Screenshot (49)](https://github.com/CHEGEBB/FilmHaven/assets/123733116/587ff334-fed1-4311-9ace-8c8d11a9d4cc)
+
+![Screenshot (50)](https://github.com/CHEGEBB/FilmHaven/assets/123733116/1118a0ea-39d6-4673-9cd0-4e6a23b58cc5)
+
+
+
+![Screenshot (51)](https://github.com/CHEGEBB/FilmHaven/assets/123733116/b6ad1a56-4714-4700-a4ed-68c047eba9d3)
+
+
 ## FilmHaven Movie Website 🎬
 Welcome to FilmHaven, your ultimate destination for a cinematic experience! 🍿 Explore a vast collection of movies and TV shows, curated just for you. Whether you're a hardcore cinephile or a casual viewer, FilmHaven has something for everyone.
 
