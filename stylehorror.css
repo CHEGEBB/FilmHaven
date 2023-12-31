@@ -1,0 +1,126 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+
+body {
+    background-color: #2b2b2b; /* Chartreuse-dark background color */
+    color: #c5c8c6;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+}
+h1, h2, h3 {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+}
+header {
+    background-color: #4e4e4e; /* Chartreuse-dark header background color */
+    padding: 15px;
+    text-align: center;
+}
+
+header a {
+    color: #b5bd68;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #b5bd68;
+}
+
+.movie-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.movie-card {
+    width: 23%;
+    margin-bottom: 20px;
+    background-color: #4e4e4e; /* Chartreuse-dark movie card background color */
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #b5bd68;
+}
+
+.movie-info {
+    padding: 10px;
+}
+
+.movie-info h3 {
+    color: #b5bd68;
+    margin-bottom: 5px;
+}
+
+.movie-info p {
+    font-size: 14px;
+}
+
+.movie-info a {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #b5bd68;
+    color: #4e4e4e;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #4e4e4e; /* Chartreuse-dark footer background color */
+    color: #b5bd68;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+}
+
+.socials {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.socials li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.socials img {
+    width: 25px;
+    height: auto;
+}
+
+/* mobile design */
+@media (max-width: 768px) {
+    .movie-card {
+        width: 48%;
+    }
+    .movie-info {
+        width: 100px;
+        height: 80px;
+        font-size: 12px;
+    }
+}
+/* tablet design */
+@media (max-width: 1024px) {
+    .movie-card {
+        width: 31%;
+    }
+}

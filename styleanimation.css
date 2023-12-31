@@ -1,0 +1,186 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+
+
+body {
+    background-color: #073642;
+    color: #93a1a1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+h1,
+h2,
+h3{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #93a1a1;
+
+}
+
+header {
+    background-color: #073642;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #586e75;
+}
+
+header a {
+    color: #6c71c4;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #6c71c4;
+}
+
+.movie-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.movie-card {
+    width: 23%;
+    margin-bottom: 20px;
+    background-color: #073642;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.movie-card:hover {
+    animation: scaleUp 1s ease-in-out infinite;
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.movie-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    background-color: rgba(7, 54, 66, 0.8); /* semi-transparent background */
+    padding: 15px;
+    border-radius: 8px;
+    width: 80%;
+}
+
+.movie-card:hover .movie-info {
+    opacity: 1;
+}
+
+.movie-info h3 {
+    color: #6c71c4;
+    margin-bottom: 5px;
+}
+
+.movie-info p {
+    font-size: 14px;
+    color: #93a1a1;
+}
+
+.movie-info a {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #d33682;
+    color: #073642;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #073642;
+    color: #6c71c4;
+    text-align: center;
+    padding: 15px;
+    position: fixed; /* Change to fixed */
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+
+.socials {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.socials li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.socials img {
+    width: 25px;
+    height: auto;
+}
+
+.nav {
+    background-color: #073642;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.nav a {
+    color:  #d33682;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav a:hover {
+    color: #6c71c4;
+    background-color: #002b36;
+}
+
+.nav a.active {
+    color: #6c71c4;
+    background-color: #002b36;
+    text-decoration: underline; /* Add underline style for the active link */
+}
+
+/* Add a separator between nav items */
+.nav a:not(:last-child) {
+    border-right: 1px solid #586e75;
+}
+
+/* If you have an active state for the current page, you can style it like this: */
+.nav a.active {
+    background-color: #073642;
+    color: #6c71c4;
+}

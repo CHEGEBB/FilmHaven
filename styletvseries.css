@@ -1,0 +1,141 @@
+/* styletvseries.css */
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a; /* Dark Background */
+    color: #fff; /* Light Text */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #333; /* Dark Container Background */
+    border-radius: 8px;
+}
+
+/* Header styles */
+header {
+    background-color:black; /* Blue */
+    padding: 10px;
+    text-align: center;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+header a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Movie section styles */
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffff; 
+    text-align: center;
+}
+
+.movie-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.movie-card {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .movie-info {
+        padding: 15px;
+        background-color: #1a1a1a; /* Dark Background */
+        border-radius: 0 0 8px 8px;
+
+        h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #fff; /* Light Text */
+        }
+
+        p {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #ccc; /* Lighter Text */
+        }
+
+        a {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: hsla(0, 100%, 50%, 1); 
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: #3a6cb6; /* Darker Blue on hover */
+            }
+        }
+    }
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+/* Footer styles */
+footer {
+    background-color:#333; 
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+footer p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+footer .socials {
+    list-style: none;
+    padding: 0;
+}
+
+footer .socials li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer .socials li a img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+footer .socials li a img:hover {
+    transform: scale(1.2);
+}

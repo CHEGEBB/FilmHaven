@@ -1,0 +1,145 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    background: url("./images/comedy/comedybac.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1, h2, h3 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #d64541; /* Lava Red */
+    padding: 10px;
+    text-align: center;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+header a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Movie section styles */
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #d64541; /* Lava Red */
+    text-align: center;
+}
+
+.movie-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.movie-card {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .movie-info {
+        padding: 15px;
+        background-color: #fff;
+        border-radius: 0 0 8px 8px;
+
+        h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        p {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        a {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #d64541; /* Lava Red */
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: #b33632; /* Darker Lava Red on hover */
+            }
+        }
+    }
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+/* Footer styles */
+footer {
+    background-color: black; /* Lava Red */
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+footer p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+footer .socials {
+    list-style: none;
+    padding: 0;
+}
+
+footer .socials li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer .socials li a img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+footer .socials li a img:hover {
+    transform: scale(1.2);
+}

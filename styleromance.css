@@ -1,0 +1,122 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap');
+
+body {
+    background-color: #1a1b26; /* Tokyonight background color */
+    color: #abb2bf;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Merriweather', serif;
+}
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+}
+
+header {
+    background-color: #282c34; /* Tokyonight header background color */
+    padding: 15px;
+    text-align: center;
+}
+
+header a {
+    color: #61afef;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #61afef;
+}
+
+.movie-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.movie-card {
+    width: 23%;
+    margin-bottom: 20px;
+    background-color: #282c34; /* Tokyonight movie card background color */
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #61afef;
+}
+
+.movie-info {
+    padding: 10px;
+}
+
+.movie-info h3 {
+    color: #61afef;
+    margin-bottom: 5px;
+}
+
+.movie-info p {
+    font-size: 14px;
+}
+
+.movie-info a {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #61afef;
+    color: #282c34;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #282c34; /* Tokyonight footer background color */
+    color: #61afef;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+}
+
+.socials {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.socials li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.socials img {
+    width: 25px;
+    height: auto;
+}
+
+/* mobile design */
+@media (max-width: 768px) {
+    .movie-card {
+        width: 48%;
+    }
+}
+/* tablet design */
+@media (max-width: 1024px) {
+    .movie-card {
+        width: 31%;
+    }
+}
