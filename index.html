@@ -9,6 +9,7 @@
     <script src="script.js"></script>
     <script src="js/jquery-func.js"></script>
     <link rel="icon" href="./assets/film.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="modal.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -121,68 +122,53 @@
           <!-- Featured movie card template -->
           <div class="cards">
             <!-- Card 1 -->
-            <div class="card1">
-              <img src="./images/sixty_five_xlg.jpg" alt="Featured Movie 1" />
-              <div class="card-info">
-                <h3>Sixty-Five</h3>
-                <p>
-                  Embark on a journey into the enigmatic world of "Sixty-Five."
-                  This gripping film unfolds the narrative of an astronaut who
-                  crash lands on a mysterious planet only to discover he's not
-                  alone. Brace yourself for a cinematic experience that will
-                  captivate your senses and keep you on the edge of your seat.
-                </p>
-                <a href="#">Download Now</a>
-              </div>
-            </div>
+<div class="card1">
+  <img src="./images/sixty_five_xlg.jpg" alt="Featured Movie 1" />
+  <div class="card-info">
+    <h3>Sixty-Five</h3>
+    <p>
+      Embark on a journey into the enigmatic world of "Sixty-Five." This gripping film unfolds the narrative of an astronaut who crash lands on a mysterious planet only to discover he's not alone. Brace yourself for a cinematic experience that will captivate your senses and keep you on the edge of your seat.
+    </p>
+    <a href="#" class="download-link" data-title="Sixty-Five" data-description="Embark on a journey into the enigmatic world of Sixty-Five. This gripping film unfolds the narrative of an astronaut who crash lands on a mysterious planet only to discover he's not alone. Brace yourself for a cinematic experience that will captivate your senses and keep you on the edge of your seat." data-image="./images/sixty_five_xlg.jpg">Download Now</a>
+  </div>
+</div>
 
-            <!-- Card 2 -->
-            <div class="card2">
-              <img
-                src="./images/mission_impossible__dead_reckoning_part_one_ver2_xlg.jpg"
-                alt="Featured Movie 2"
-              />
-              <div class="card-info">
-                <h3>Mission: Impossible - Dead Reckoning Part One</h3>
-                <p>
-                  Immerse yourself in the adrenaline-pumping adventure of
-                  "Mission: Impossible - Dead Reckoning Part One." Ethan Hunt and
-                  his IMF team must track down a dangerous weapon before it
-                  falls into the wrong hands. Get ready for breathtaking
-                  stunts, high-stakes espionage, and a plot riddled with
-                  unexpected twists and turns.
-                </p>
-                <a href="#">Download Now</a>
-              </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="card3">
-              <img src="./images/mother_xlg.jpg" alt="Featured Movie 3" />
-              <div class="card-info">
-                <h3>The Mother</h3>
-                <p>
-                  While fleeing from dangerous assailants, an assassin comes out
-                  of hiding to protect the daughter she left earlier in life.
-                </p>
-                <a href="#">Download Now</a>
-              </div>
-            </div>
-            <!-- Card 4 -->
-            <div class="card4">
-              <img
-                src="./images/expend4bles_ver2_xlg.jpg"
-                alt="Featured Movie 4"
-              />
-              <div class="card-info">
-                <h3>The Expendables 2</h3>
-                <p>
-                  Sylvester Stallone leads a group of elite mercenaries on a
-                  mission to retrieve a valuable item, facing intense action and
-                  unexpected challenges along the way.
-                </p>
-                <a href="#">Download Now</a>
-              </div>
-            </div>
+<!-- Card 2 -->
+<div class="card2">
+  <img src="./images/mission_impossible__dead_reckoning_part_one_ver2_xlg.jpg" alt="Featured Movie 2" />
+  <div class="card-info">
+    <h3>Mission: Impossible - Dead Reckoning Part One</h3>
+    <p>
+      Immerse yourself in the adrenaline-pumping adventure of "Mission: Impossible - Dead Reckoning Part One." Ethan Hunt and his IMF team must track down a dangerous weapon before it falls into the wrong hands. Get ready for breathtaking stunts, high-stakes espionage, and a plot riddled with unexpected twists and turns.
+    </p>
+    <a href="#" class="download-link" data-title="Mission: Impossible - Dead Reckoning Part One" data-description="Immerse yourself in the adrenaline-pumping adventure of Mission: Impossible - Dead Reckoning Part One. Ethan Hunt and his IMF team must track down a dangerous weapon before it falls into the wrong hands. Get ready for breathtaking stunts, high-stakes espionage, and a plot riddled with unexpected twists and turns." data-image="./images/mission_impossible__dead_reckoning_part_one_ver2_xlg.jpg">Download Now</a>
+  </div>
+</div>
+
+<!-- Card 3 -->
+<div class="card3">
+  <img src="./images/mother_xlg.jpg" alt="Featured Movie 3" />
+  <div class="card-info">
+    <h3>The Mother</h3>
+    <p>
+      While fleeing from dangerous assailants, an assassin comes out of hiding to protect the daughter she left earlier in life.
+    </p>
+    <a href="#" class="download-link" data-title="The Mother" data-description="While fleeing from dangerous assailants, an assassin comes out of hiding to protect the daughter she left earlier in life." data-image="./images/mother_xlg.jpg">Download Now</a>
+  </div>
+</div>
+
+<!-- Card 4 -->
+<div class="card4">
+  <img src="./images/expend4bles_ver2_xlg.jpg" alt="Featured Movie 4" />
+  <div class="card-info">
+    <h3>The Expendables 4</h3>
+    <p>
+      Sylvester Stallone leads a group of elite mercenaries on a mission to retrieve a valuable item, facing intense action and unexpected challenges along the way.
+    </p>
+    <a href="#" class="download-link" data-title="The Expendables 4" data-description="Sylvester Stallone leads a group of elite mercenaries on a mission to retrieve a valuable item, facing intense action and unexpected challenges along the way." data-image="./images/expend4bles_ver2_xlg.jpg">Download Now</a>
+  </div>
+</div>
+
           </div>
         </div>
       </section>
@@ -374,6 +360,13 @@
     </div>
 </section>
 
+<div id="modalContainer" class="modal-container">
+  <div id="modalContent" class="modal-content">
+    <span id="closeModalBtn" class="close-btn">&times;</span>
+  </div>
+</div>
+
+
      <!-- Footer Section -->
 <footer>
     <div class="footer-container">
@@ -425,7 +418,92 @@
     <div id="scrollToTopBtn" class="scroll-to-top-btn">
         <img src="./assets/arrow-up-fill.svg" alt="Scroll to Top Arrow">
     </div>
-    
+<!-- Modal Container -->
+<div id="trailerModal" class="modal-container">
+  <div id="trailerContent" class="modal-content">
+    <span id="closeTrailerBtn" class="close-btn">&times;</span>
+    <iframe id="trailerIframe" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+
+<div id="modalContainer" class="modal-container">
+  <div id="modalContent" class="modal-content">
+      <span id="closeModalBtn" class="close-btn">&times;</span>
+      <div id="modalDetails" class="modal-details">
+          <h3 id="modalTitle"></h3>
+          <p id="modalDescription"></p>
+          <div id="modalTrailer" class="modal-trailer"></div>
+          <a id="modalDownloadBtn" href="#" class="download-button">Download Now</a>
+      </div>
+  </div>
+</div>
+
+<script>
+  // Function to open the modal with movie details and trailer
+  function openModal(title, description, trailerPath) {
+      var modalTitle = document.getElementById('modalTitle');
+      var modalDescription = document.getElementById('modalDescription');
+      var modalTrailer = document.getElementById('modalTrailer');
+      var modalDownloadBtn = document.getElementById('modalDownloadBtn');
+
+      modalTitle.innerText = title;
+      modalDescription.innerText = description;
+
+      // Create an iframe for the trailer
+      var trailerIframe = document.createElement('iframe');
+      trailerIframe.src = trailerPath;
+      trailerIframe.width = '100%';
+      trailerIframe.height = '100%';
+      trailerIframe.frameBorder = '0';
+      trailerIframe.allowFullscreen = true;
+
+      // Replace existing trailer content with the new iframe
+      modalTrailer.innerHTML = '';
+      modalTrailer.appendChild(trailerIframe);
+
+      modalDownloadBtn.href = trailerPath; // Set this to your actual download link
+
+      document.getElementById('modalContainer').style.display = 'flex';
+  }
+
+  // Function to close the modal
+  function closeModal() {
+      var modalTrailer = document.getElementById('modalTrailer');
+      modalTrailer.innerHTML = ''; // Clear the trailer content
+      document.getElementById('modalContainer').style.display = 'none';
+  }
+
+  // Attach click event to "Download Now" links
+  document.querySelectorAll('.download-link').forEach(function (downloadLink) {
+      downloadLink.addEventListener('click', function (event) {
+          event.preventDefault();
+
+          var title = this.getAttribute('data-title');
+          var description = this.getAttribute('data-description');
+          var trailerPath = `./trailers/${title}_trailer.mp4`;
+
+          openModal(title, description, trailerPath);
+      });
+  });
+
+  // Attach click event to close button in the modal
+  document.getElementById('closeModalBtn').addEventListener('click', closeModal);
+
+  // Close modal if clicked outside the content
+  window.addEventListener('click', function (event) {
+      if (event.target === document.getElementById('modalContainer')) {
+          closeModal();
+      }
+  });
+
+  // Close modal if pressed ESC key
+  window.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && document.getElementById('modalContainer').style.display === 'flex') {
+          closeModal();
+      }
+  });
+</script>
+
 </body>
 </html>
 

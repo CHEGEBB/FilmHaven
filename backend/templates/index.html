@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FilmHaven</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
+    <script src="js/jquery-func.js"></script>
+    <link rel="icon" href="./assets/film.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- Navigation Section -->
+    <div class="navbar">
+      <div class="mode">
+        <div class="mode-text">
+          <p>Tokyonight Mode</p>
+        </div>
+        <div class="logo">
+            <a href="index.html"
+              ><img src="./assets/film.svg" alt="FilmHaven Logo"
+            /></a>
+          </div>
+        <div class="switch-container">
+            <div class="theme-message">Switch Theme:</div>
+          <div class="switch" id="modeSwitch">
+            <div class="slider"></div>
+          </div>
+        </div>
+      </div>
+      
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="./action.html">Action Movies</a></li>
+          <li><a href="./Tvshows.html">TV Shows</a></li>
+          <li class="dropdown" id="genreDropdown">
+            <a class="dropbtn">Genres &#9660;</a>
+            <div class="dropdown-content">
+              <a href="Tvshows.html">Tv Series</a>
+              <a href="action.html">Action</a>
+              <a href="drama.html">Drama</a>
+              <a href="comedy.html">Comedy</a>
+              <a href="horror.html">Horror</a>
+              <a href="romance.html">Romance</a>
+              <a href="sci-fi.html">Sci-Fi</a>
+              <a href="animation.html">Animation</a>
+            </div>
+          </li>
+          <li><a href="./animation.html">Animation</a></li>
+          <li class="search-container">
+            <input
+              class="search"
+              type="search"
+              placeholder="Search"
+              id="searchInput"
+            />
+            <button class="search-btn" onclick="handleSearch()">Search</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main Content Sections -->
+    <div class="sections">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="herosec">
+          <h2 class="fadeInUp">
+            <span class="highlight-text">FilmHaven</span>: Discover the Magic of
+            <span class="highlight-text">Cinema</span>
+          </h2>
+          <p class="fadeInUp">
+            Immerse yourself in the world of entertainment with FilmHaven. From
+            timeless classics to the latest blockbusters, we've got it all.
+          </p>
+          <p class="fadeInUp">
+            Explore a
+            <span
+              style="
+                color: red;
+                font-size: 26px;
+                font-family: 'Noto Serif JP', serif;
+              "
+              >vast collection of movies and TV shows</span
+            >
+            curated just for you. Whether you're a cinephile or a casual viewer,
+            FilmHaven has something for everyone.
+          </p>
+          <p class="fadeInUp">
+            Indulge in high-quality<em
+              ><span style="color: red; text-decoration: underline"
+                >Downloads,</span
+              ></em
+            >
+            anywhere. Your cinematic journey begins
+            <span style="color: red; text-decoration: underline"> here.</span>
+          </p>
+          <div class="cta-buttons fadeInUp">
+            <a href="#featured" class="cta-button primary"
+              ><button>
+                <span class="play-icon-placeholder"></span> Explore Now
+              </button></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Movies Section -->
+      <section class="featured">
+        <div class="container2">
+          <h2>Featured Movies</h2>
+          <!-- Featured movie card template -->
+          <div class="cards">
+            <!-- Card 1 -->
+<div class="card1">
+  <img src="./images/sixty_five_xlg.jpg" alt="Featured Movie 1" />
+  <div class="card-info">
+    <h3>Sixty-Five</h3>
+    <p>
+      Embark on a journey into the enigmatic world of "Sixty-Five." This gripping film unfolds the narrative of an astronaut who crash lands on a mysterious planet only to discover he's not alone. Brace yourself for a cinematic experience that will captivate your senses and keep you on the edge of your seat.
+    </p>
+    <a href="#" class="download-link" data-title="Sixty-Five" data-description="Embark on a journey into the enigmatic world of Sixty-Five. This gripping film unfolds the narrative of an astronaut who crash lands on a mysterious planet only to discover he's not alone. Brace yourself for a cinematic experience that will captivate your senses and keep you on the edge of your seat." data-image="./images/sixty_five_xlg.jpg">Download Now</a>
+  </div>
+</div>
+
+<!-- Card 2 -->
+<div class="card2">
+  <img src="./images/mission_impossible__dead_reckoning_part_one_ver2_xlg.jpg" alt="Featured Movie 2" />
+  <div class="card-info">
+    <h3>Mission: Impossible - Dead Reckoning Part One</h3>
+    <p>
+      Immerse yourself in the adrenaline-pumping adventure of "Mission: Impossible - Dead Reckoning Part One." Ethan Hunt and his IMF team must track down a dangerous weapon before it falls into the wrong hands. Get ready for breathtaking stunts, high-stakes espionage, and a plot riddled with unexpected twists and turns.
+    </p>
+    <a href="#" class="download-link" data-title="Mission: Impossible - Dead Reckoning Part One" data-description="Immerse yourself in the adrenaline-pumping adventure of Mission: Impossible - Dead Reckoning Part One. Ethan Hunt and his IMF team must track down a dangerous weapon before it falls into the wrong hands. Get ready for breathtaking stunts, high-stakes espionage, and a plot riddled with unexpected twists and turns." data-image="./images/mission_impossible__dead_reckoning_part_one_ver2_xlg.jpg">Download Now</a>
+  </div>
+</div>
+
+<!-- Card 3 -->
+<div class="card3">
+  <img src="./images/mother_xlg.jpg" alt="Featured Movie 3" />
+  <div class="card-info">
+    <h3>The Mother</h3>
+    <p>
+      While fleeing from dangerous assailants, an assassin comes out of hiding to protect the daughter she left earlier in life.
+    </p>
+    <a href="#" class="download-link" data-title="The Mother" data-description="While fleeing from dangerous assailants, an assassin comes out of hiding to protect the daughter she left earlier in life." data-image="./images/mother_xlg.jpg">Download Now</a>
+  </div>
+</div>
+
+<!-- Card 4 -->
+<div class="card4">
+  <img src="./images/expend4bles_ver2_xlg.jpg" alt="Featured Movie 4" />
+  <div class="card-info">
+    <h3>The Expendables 4</h3>
+    <p>
+      Sylvester Stallone leads a group of elite mercenaries on a mission to retrieve a valuable item, facing intense action and unexpected challenges along the way.
+    </p>
+    <a href="#" class="download-link" data-title="The Expendables 4" data-description="Sylvester Stallone leads a group of elite mercenaries on a mission to retrieve a valuable item, facing intense action and unexpected challenges along the way." data-image="./images/expend4bles_ver2_xlg.jpg">Download Now</a>
+  </div>
+</div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Popular section -->
+      <section class="popular">
+        <div class="container3">
+          <h2>Popular</h2>
+          <!-- Add content for popular movie list -->
+          <div class="popularlist">
+            <!-- Popular Movie 1 -->
+            <div class="popularlist1">
+              <img src="./images/black_demon_ver2.jpg" alt="Popular Movie 1" />
+              <div class="popularlist-info">
+                <h3 style="color: #B22222;">Black Demon</h3>
+                <p>
+                  An intense thriller that follows the story of a detective
+                  caught in a web of deceit and supernatural occurrences. As he
+                  delves into the mysterious case, he discovers dark secrets
+                  that challenge his perception of reality.
+                </p>
+                <a href="#"><button>Download Now</button></a>
+              </div>
+            </div>
+            <!-- Popular Movie 2 -->
+            <div class="popularlist2">
+              <img
+                src="./images/john_wick_chapter_four_ver2_xlg.jpg"
+                alt="Popular Movie 2"
+              />
+              <div class="popularlist-info">
+                <h3 style="color: #B22222;">John Wick: Chapter Four</h3>
+                <p>
+                  Witness the return of the legendary assassin, John Wick, as he
+                  faces new enemies and challenges. The action-packed sequel
+                  takes the audience on a thrilling ride through the dangerous
+                  underworld, where survival is not guaranteed.
+                </p>
+                <a href="#"><button>Download Now</button></a>
+              </div>
+            </div>
+            <!-- Popular Movie 3 -->
+            <div class="popularlist3">
+              <img
+                src="./images/extraction_two_xlg.jpg"
+                alt="Popular Movie 3"
+              />
+              <div class="popularlist-info">
+                <h3 style="color: #B22222;">Extraction: Part Two</h3>
+                <p>
+                  Follow the adrenaline-fueled journey of a skilled mercenary as
+                  he takes on a dangerous mission to rescue a kidnapped
+                  individual. With intense action sequences and unexpected
+                  twists, Extraction: Part Two delivers a gripping cinematic
+                  experience.
+                </p>
+                <a href="#"><button>Download Now</button></a>
+              </div>
+            </div>
+            <!-- Popular Movie 4 -->
+            <div class="popularlist4">
+              <img
+                src="./images/antman_and_the_wasp_quantumania_ver4_xlg.jpg"
+                alt="Popular Movie 4"
+              />
+              <div class="popularlist-info">
+                <h3 style="color: #B22222;">Ant-Man and the Wasp: Quantumania</h3>
+                <p>
+                  Join the Marvel superheroes in their latest adventure as they
+                  navigate the quantum realm and face new challenges. Ant-Man
+                  and the Wasp: Quantumania promises a mix of humor, heart, and
+                  mind-bending action that will leave audiences on the edge of
+                  their seats.
+                </p>
+                <a href="#"><button>Download Now</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!-- upcoming section -->
+<section class="upcoming">
+    <div class="container4">
+        <h2>Upcoming</h2>
+            <div class="part1">
+                <div class="upcoming1">
+                    <img
+                      src="./images/upcoming/bob_marley_one_love_ver3_xlg.jpg"
+                      alt="Upcoming Movie 1"
+                    />
+                    <div class="upcoming-info">
+                      <h3>Bob Marley: One Love</h3>
+                      <p>
+                        Explore the life and legacy of the legendary musician Bob
+                        Marley in this upcoming biographical film. The movie takes
+                        audiences on a journey through Marley's influential career,
+                        his impact on music, and the message of love and unity he
+                        championed.
+                      </p>
+                      <a href="#">Download Now</a>
+                    </div>
+                  </div>
+                  <!-- Upcoming Movie 2 -->
+                  <div class="upcoming2">
+                    <img
+                      src="./images/upcoming/cabrini_xlg.jpg"
+                      alt="Upcoming Movie 2"
+                    />
+                    <div class="upcoming-info">
+                      <h3>Cabrini</h3>
+                      <p>
+                        Embark on a suspenseful horror experience with "Cabrini."
+                        This upcoming film promises to deliver spine-chilling
+                        moments as it explores the mysteries surrounding an eerie
+                        location. Brace yourself for a thrilling ride into the
+                        unknown.
+                      </p>
+                      <a href="#">Download Now</a>
+                    </div>
+                  </div>
+    
+                  <!-- Upcoming Movie 3 -->
+                  <div class="upcoming3">
+                    <img
+                      src="./images/upcoming/code_eight_part_ii_xlg.jpg"
+                      alt="Upcoming Movie 3"
+                    />
+                    <div class="upcoming-info">
+                      <h3>Code Eight: Part II</h3>
+                      <p>
+                        The sci-fi adventure continues with "Code Eight: Part II."
+                        Join the characters as they navigate a world where
+                        superhuman abilities come with consequences. Expect a blend
+                        of action, drama, and unexpected twists.
+                      </p>
+                      <a href="#">Download Now</a>
+                    </div>
+                  </div>
+                    <!-- Upcoming Movie 4 -->
+              <div class="upcoming4">
+                <img
+                  src="./images/upcoming/curse_of_the_sin_eater_xlg - Copy.jpg"
+                  alt="Upcoming Movie 4"
+                />
+                <div class="upcoming-info">
+                  <h3>Curse of the Sin Eater</h3>
+                  <p>
+                    Uncover dark secrets in "Curse of the Sin Eater." This
+                    upcoming supernatural thriller follows a gripping tale of
+                    redemption and retribution. Prepare for a journey into the
+                    supernatural realm like never before.
+                  </p>
+                  <a href="#">Download Now</a>
+                </div>
+              </div>
+            </div>
+    </div>
+</section>
+
+<!-- subscribe section -->
+<section class="subscribe">
+    <div class="container5">
+        <h2>Subscribe</h2>
+        <p>Subscribe to our newsletter to get the latest updates on new releases and more.</p>
+        <div class="subscribe-form">
+            <form action="">
+                <input type="email" placeholder="Enter your email address">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- About us -->
+<section class="about">
+    <div class="about-us">
+        <h2>About Us</h2>
+        <p>FilmHaven is a Downloading service, for moviea  that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.</p>
+        <p>You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</p>
+        <p>Watch anywhere. Cancel anytime.</p>
+        <p>Ready to watch? Enter your email to create or restart your membership.</p>
+        <div class="about-form">
+            <form action="">
+                <input type="email" placeholder="Enter your email address">
+                <button type="submit">Get Started</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<div id="modalContainer" class="modal-container">
+  <div id="modalContent" class="modal-content">
+    <span id="closeModalBtn" class="close-btn">&times;</span>
+  </div>
+</div>
+
+
+     <!-- Footer Section -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <a href="index.html"><img src="./assets/film.svg" alt="FilmHaven Logo" /></a>
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">Audio and Subtitles</a></li>
+                <li><a href="#">Media Center</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Audio Description</a></li>
+                <li><a href="#">Investor Relations</a></li>
+                <li><a href="#">Legal Notices</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Cookie Preferences</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Gift Cards</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Corporate Information</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.facebook.com/your_facebook_page" target="_blank"><img src="./images/facebook.svg" alt="Facebook Icon"></a>
+            <a href="https://www.instagram.com/your_instagram_page" target="_blank"><img src="./images/instagram (1).svg" alt="Instagram Icon"></a>
+            <a href="https://twitter.com/your_twitter_page" target="_blank"><img src="./images/twitter.svg" alt="Twitter Icon"></a>
+            <a href="https://www.youtube.com/your_youtube_channel" target="_blank"><img src="./images/youtube.svg" alt="YouTube Icon"></a>
+        </div>
+        <div class="footer-service">
+            <p>Service Code</p>
+        </div>
+        <div class="footer-country">
+            <p>English</p>
+        </div>
+        <div class="footer-copy">
+            <p>© 2023 FilmHaven, Inc.</p>
+            <p>Website created by Brian Chege (<a href="https://github.com/CHEGEBB" target="_blank">CHEGEBB</a>)</p>
+        </div>
+    </div>
+</footer>
+    </div>
+    <div id="scrollToTopBtn" class="scroll-to-top-btn">
+        <img src="./assets/arrow-up-fill.svg" alt="Scroll to Top Arrow">
+    </div>
+    
+</body>
+</html>
+

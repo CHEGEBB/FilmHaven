@@ -397,6 +397,73 @@ a:focus::after {
         background-color: #cc3700; /* Darker Lava Red on hover */
     }
 }
+/* Add these styles to your existing stylesheet */
+
+.modal-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+  }
+  
+  .modal-image {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px 0 0 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal-details {
+    max-width: 50%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .modal-details h3 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .modal-details p {
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .download-button {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .download-button:hover {
+    background-color: #0056b3;
+  }
+  
 
 /* Popular Movies Section */
 .popular {
