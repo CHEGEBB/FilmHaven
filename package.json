@@ -1,0 +1,22 @@
+ {
+  "name": "filmhaven",
+  "version": "1.0.0",
+  "description": "FilmHaven - A responsive multipage website for downloading movies",
+  "main": "script.js",
+  "scripts": {
+    "start": "http-server -p 3000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CHEGEBB/FilmHaven.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CHEGEBB/FilmHaven/issues"
+  },
+  "homepage": "https://github.com/CHEGEBB/FilmHaven#readme"
+}
