@@ -1,6 +1,19 @@
 from flask import Flask, render_template, send_from_directory, request
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///movies.db'  # SQLite database file
+db = SQLAlchemy(app)
+
+class Movie(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(100), nullable=False)
+    description = db.Column(db.Text, nullable=True)
+    image = db.Column(db.String(100), nullable=True)
+    file_path = db.Column(db.String(100), nullable=False)
+
+# Uncomment the following line during the initial setup to create the database table
+# db.create_all()
 
 # Replace this with your actual movie data
 movies_data = {
