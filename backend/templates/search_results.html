@@ -1,0 +1,19 @@
+<!-- templates/search_results.html -->
+
+{% extends 'layout.html' %}
+
+{% block content %}
+
+    <h1>Search Results for "{{ query }}"</h1>
+
+    {% if search_results %}
+        <ul>
+            {% for result in search_results %}
+                <li>{{ result }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No results found.</p>
+    {% endif %}
+
+{% endblock %}
